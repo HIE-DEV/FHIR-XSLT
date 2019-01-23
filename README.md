@@ -23,7 +23,7 @@ Put the following line (the XSLT assumes that the FHIR bundle containing the Com
 
 Put the following line (the XSLT assumes that the Composition is found in the first entry in the bundle):
 
-    <?xml-stylesheet type="text/xsl" href="https://raw.githubusercontent.com/HIE-DEV/FHIR-XSLT/master/XSLT/fhir-itk3-to-html.xsl" ?>
+    <?xml-stylesheet type="text/xsl" href="https://raw.githubusercontent.com/HIE-DEV/FHIR-XSLT/master/XSLT/fhir-bundle-to-html.xsl" ?>
     
 ### Modifying for local copies:
 
