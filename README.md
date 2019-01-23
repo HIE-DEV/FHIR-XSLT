@@ -8,6 +8,7 @@ For providing XSLT files that can transform FHIR messages
 ### Instructions:
 
 To utilise the files for testing of FHIR .XML messages and how they render in HTML, in your .XML document, find the line that contains the XML version (which if you don't have it, should be included; it's usually on the very first line), it will typically look like:
+
     `<?xml version="1.0" encoding="UTF-8"?>`
 
 It's after that line you will put one of the following lines of code (depending on what type of FHIR message type you have):
@@ -15,11 +16,13 @@ It's after that line you will put one of the following lines of code (depending 
 ### For ITK3 FHIR messages:
 
 Put the following line (the XSLT assumes that the FHIR bundle containing the Composition is found in the fourth 'entry' of the IKT3 FHIR message):
+
     `<?xml-stylesheet type="text/xsl" href="https://raw.githubusercontent.com/HIE-DEV/FHIR-XSLT/master/XSLT/itk3-fhir-to-html.xsl" ?>`
 
 ### For FHIR bundles:
 
 Put the following line (the XSLT assumes that the Composition is found in the first entry in the bundle):
+
     `<?xml-stylesheet type="text/xsl" href="https://raw.githubusercontent.com/HIE-DEV/FHIR-XSLT/master/XSLT/fhir-itk3-to-html.xsl" ?>`
     
 ### Modifying for local copies:
